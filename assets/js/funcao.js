@@ -14,6 +14,7 @@ function soma(n1, n2){
 
 
 
+
 function retornaIdade(i){
     let alert;
     if(i <= 18){
@@ -23,6 +24,7 @@ function retornaIdade(i){
 
     }
     return alert;
+    
 
 }
 //console.log(retornaIdade(25));
