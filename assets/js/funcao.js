@@ -24,6 +24,7 @@ function retornaIdade(i){
 
     }
     return alert;
+    
 
 }
 //console.log(retornaIdade(25));
