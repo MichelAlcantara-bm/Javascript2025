@@ -14,12 +14,13 @@ function soma(n1, n2){
 
 
 
+
 function retornaIdade(i){
     let alert;
     if(i <= 18){
         alert = "você é menor de idade";
     }else{
-        alert = "acesso liberado";
+        alert = "acesso liberadoo";
 
     }
     return alert;
@@ -30,7 +31,7 @@ function retornaIdade(i){
 
 function porcentagem(x, y){
     let calt = (x * y)/100;
-    let retorno = `O resultado da porcentagem de ${y} de ${x} é ${calt} `;
+    let retorno = `O resultado da porcentagem de e ${y} de ${x} é ${calt} `;
     return retorno;
 }
 
