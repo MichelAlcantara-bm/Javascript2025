@@ -20,7 +20,7 @@ function retornaIdade(i){
     if(i <= 18){
         alert = "você é menor de idade";
     }else{
-        alert = "acesso liberadoo";
+        alert = "acesso liberado";
 
     }
     return alert;
@@ -176,20 +176,73 @@ let frutas = [
 // console.log(frutas.join(','));
 
 //função sort ordena o array
-frutas.sort()
+//frutas.sort()
 
 //função de reverte o array
-frutas.reverse()
+//frutas.reverse()
 // console.log(frutas);
 
-let cars = [
-    {marca: 'Audi', ano: 2025},
-    {marca: 'Fiat', ano: 2015},
-    {marca: 'BMW', ano: 2022},
+// let cars = [
+//     {marca: 'Audi', ano: 2025},
+//     {marca: 'Fiat', ano: 2015},
+//     {marca: 'BMW', ano: 2022},
   
-];
+// ];
 
 
 // cars.sort((a, b) => a.ano - b.ano);
-console.log(cars);
+//console.log(cars);
 
+//filtra o que você está passando e cria um novo array com esses resultados
+// let bigFrutas = frutas.filter((item) =>{
+//     return item.length > 4
+
+// });
+
+// console.log(bigFrutas);
+
+// a função every retorna ture quando todos do array satisfaz a validação passada nele
+// let ok = frutas.every((valeu)=>{
+//     return valeu.length > 3;
+// });
+
+//função some() ela retorna true caso apenas um da validação passada seja verdadeira ela reotnará true
+// let ok = frutas.some((valeu)=>{
+//     return valeu.length > 3;
+// });
+//console.log(ok);
+
+//===========================includes=================//
+
+// a Função Includes e usada pesquisar algum valor dentro do array que você precise saber se tem caso tenha ele retorna true
+// let pesquisaFruta = frutas.includes('uva');
+// console.log(pesquisaFruta);
+
+
+
+//=====================================================//
+
+
+//=================== Manipulando elementos ============//
+// function clicar(){
+//     alert("clicou");
+// }
+
+// let botao = document.querySelector('.botao');
+// botao.addEventListener("click", () => {
+//     clicar();
+// });
+
+
+//innerHTML adiciona ou altera um campo html na pagina
+//outerHTML ele altera geral tanto o elemento de dentro subtituindo ele como um todo
+let botao = document.querySelector('.botao');
+botao.addEventListener("click", () => {
+    adicionaTxt();
+});
+
+function adicionaTxt(){
+    let elemento = document.querySelector('ul');
+    elemento.outerHTML = "<strong>Mudou geral</strong>"
+    // elemento.innerHTML += "<li>Elemento adicionado</li>";
+}
