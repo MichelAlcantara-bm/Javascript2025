@@ -30,7 +30,7 @@ function retornaIdade(i){
 
 function porcentagem(x, y){
     let calt = (x * y)/100;
-    let retorno = `O resultado da porcentagem de ${y} de ${x} é ${calt} `;
+    let retorno = `O resultado da porcentagem de e ${y} de ${x} é ${calt} `;
     return retorno;
 }
 
