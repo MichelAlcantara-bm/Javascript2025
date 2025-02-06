@@ -20,7 +20,7 @@ function retornaIdade(i){
     if(i <= 18){
         alert = "você é menor de idade";
     }else{
-        alert = "acesso liberadoo";
+        alert = "acesso liberado";
 
     }
     return alert;
